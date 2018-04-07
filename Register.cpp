@@ -4,10 +4,6 @@
 
 ostream& operator<<(ostream& out, Register& reg) 
 {
-	//cout << "Register: turn -- " << reg.turn << endl;
-	//cout << "Player 1 has probability " << reg.ProbtoWin1 << ";" << endl;
-	//cout << "Player 2 has probability " << reg.ProbtoWin2 << ";" << endl;
-	
 	for (int i = 0; i < reg.Reg.Size(); i++)
 	{
 		cout << reg.Reg[i] << endl;
@@ -28,7 +24,7 @@ void Register::SetPosition(short int p)
 		for (int i = 0; i < Reg.Size(); i++)
 		{
 			Field tmp1 = Reg[i];
-			if (tmp1.setposition(tA, tB, p)) //Äàëüøå ïðîõîäÿò òîëüêî òå ïîëÿ, íà êîòîðûõ õîä âîçìîæåí
+			if (tmp1.setposition(tA, tB, p)) //Дальше проходят только те поля, на которых ход возможен
 			{
 				
 				tmp.AddtoTail(&tmp1);
