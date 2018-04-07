@@ -31,7 +31,7 @@ void Register::SetPosition(short int p)
 			if (tmp1.setposition(tA, tB, p)) //Äàëüøå ïðîõîäÿò òîëüêî òå ïîëÿ, íà êîòîðûõ õîä âîçìîæåí
 			{
 				
-				tmp.AddtoTail(&tmp1);//вот так
+				tmp.AddtoTail(&tmp1);
 			}
 			else tmp.AddtoTail(&tmp1);
 		}
