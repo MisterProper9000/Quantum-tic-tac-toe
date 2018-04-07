@@ -28,10 +28,10 @@ void Register::SetPosition(short int p)
 		for (int i = 0; i < Reg.Size(); i++)
 		{
 			Field tmp1 = Reg[i];
-			if (tmp1.setposition(tA, tB, p)) //Äàëüøå ïðîõîäÿò òîëüêî òå ïîëÿ, íà êîòîðûõ õîä âîçìîæåí
+			if (tmp1.setposition(tA, tB, p)) //Ã„Ã Ã«Ã¼Ã¸Ã¥ Ã¯Ã°Ã®ÃµÃ®Ã¤Ã¿Ã² Ã²Ã®Ã«Ã¼ÃªÃ® Ã²Ã¥ Ã¯Ã®Ã«Ã¿, Ã­Ã  ÃªÃ®Ã²Ã®Ã°Ã»Ãµ ÃµÃ®Ã¤ Ã¢Ã®Ã§Ã¬Ã®Ã¦Ã¥Ã­
 			{
 				
-				tmp.AddtoTail(&tmp1);
+				tmp.AddtoTail(&tmp1);//Ð²Ð¾Ñ‚ Ñ‚Ð°Ðº
 			}
 			else tmp.AddtoTail(&tmp1);
 		}
