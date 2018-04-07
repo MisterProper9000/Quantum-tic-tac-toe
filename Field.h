@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-//Обычное поле для крестиков-ноликов
+//РѕР±С‹С‡РЅРѕРµ РїРѕР»Рµ (РґРѕСЃРєР°) РґР»СЏ РєСЂРµСЃС‚РёРєРѕРІ РЅРѕР»РёРєРѕРІ
 
 class Field {
 	short int Block[3][3];
@@ -17,7 +17,7 @@ public:
 	};
 	void findwin(int* wins);
 	bool setposition(int a, int b, short int n);
-	friend ostream& operator<< (ostream& out, const Field& item);  //вывод одной доски
+	friend ostream& operator<< (ostream& out, const Field& item);  //РІС‹РІРѕРґ РґРѕСЃРєРё
 	Field& operator= (const Field& other);
 	friend class Register;
 	int Empty();
